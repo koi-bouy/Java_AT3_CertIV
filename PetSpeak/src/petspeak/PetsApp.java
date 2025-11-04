@@ -15,23 +15,24 @@ public class PetsApp {
      */
     public static void main(String[] args) {
         Pet p;
+        Toy ball = new Toy("Ball");
 
         
         // Assign a normal Pet object to p
         System.out.println("Pet:");
-        p = new Pet(); 
+        p = new Pet("Lilly", 3, ball); 
         p.speak();
 
         // Assign a Dog object to p
         System.out.println("\nDog:");
-        p = new Dog();
+        p = new Dog("Rover", 5, ball);
         p.speak();
         ((Dog)p).bark();
 
 
         // Assign a Cat object to p
         System.out.println("\nCat:");
-        p = new Cat();
+        p = new Cat("Felix", 5, new Toy("String"));
         p.speak();
         ((Cat)p).meow();
         

@@ -8,11 +8,13 @@ package petspeak;
  *
  * @author 30099423
  */
-public class Cat extends Pet{
-    public Cat(String name, int age, Toy favToy){
-            super(name,age,favToy);
-    }
-    public void meow(){
-        System.out.println("Meow Meow");
+public class Toy {
+    public final int ID;
+    public final String NAME;
+    private static int nextID = 1;
+
+    public Toy(String name){
+        ID = nextID++;
+        NAME = name;
     }
 }

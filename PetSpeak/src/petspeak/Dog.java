@@ -8,10 +8,14 @@ package petspeak;
  *
  * @author 30099423
  */
-public class Dog extends Pet{
+public class Dog extends Pet {
 
-    public void bark(){
+    public Dog(String name, int age, Toy favToy) {
+        super(name, age, favToy);
+    }
+
+    public void bark() {
         System.out.println("Woof Woof");
     }
-    
+
 }
